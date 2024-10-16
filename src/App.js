@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Box, Container, Typography } from "@mui/material";
+import "./App.css";
+import AdvancedPlayground from "./Playground/AdvancedPlayground";
+// impoet AdvancedPlayground
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="lg">
+      <Box my={4}>
+        <Typography variant="h4" component="h1">
+          CAD Model Viewer
+        </Typography>
+        <AdvancedPlayground />
+      </Box>
+    </Container>
   );
 }
 
